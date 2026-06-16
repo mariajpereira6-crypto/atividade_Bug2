@@ -255,7 +255,7 @@ def classificar_aluno(media, frequencia):
         return "Reprovado por nota"
 
 # Função 23 - Calcula desconto progressivo por quantidade
-# 🐛 BUG: os percentuais de desconto estão todos errados (trocados entre si)
+
 def calcular_desconto(preco, quantidade):
     """
     Aplica desconto por quantidade:
@@ -264,11 +264,11 @@ def calcular_desconto(preco, quantidade):
     - 10 ou mais    : 20% de desconto
     """
     if quantidade >= 10:
-        desconto = 0.05   # BUG: deveria ser 0.20
+        desconto = 0.05   
     elif quantidade >= 5:
-        desconto = 0.20   # BUG: deveria ser 0.10
+        desconto = 0.20   
     else:
-        desconto = 0.10   # BUG: deveria ser 0.05
+        desconto = 0.10   
     return preco * (1 - desconto)
 
 # Função 24 - Fibonacci com recursão e memoização simples
