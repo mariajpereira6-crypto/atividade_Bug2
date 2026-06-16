@@ -74,7 +74,7 @@ def fatorial(n):
 
 def contar_vogais(texto):
     """Conta quantas vogais existem no texto."""
-    vogais = "aeiou"  # BUG: 
+    vogais = "aeiou"   
     contador = 0
     for letra in texto:
         if letra in vogais:
@@ -82,10 +82,10 @@ def contar_vogais(texto):
     return contador
 
 # Função 7 - Capitaliza a primeira letra de cada palavra
-# 🐛 BUG: usa upper() em vez de title()
+
 def formatar_nome_completo(nome):
     """Retorna o nome com a primeira letra de cada palavra em maiúsculo."""
-    return nome.upper()  # BUG: deveria ser nome.title()
+    return nome.upper() 
 
 # Função 8 - Remove espaços duplicados de um texto
 # 🐛 BUG: split sem argumento e join estão corretos, mas o join usa vírgula
